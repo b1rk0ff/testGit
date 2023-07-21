@@ -17,4 +17,11 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
-                
+  run-windows-commands:
+    runs-on: Directory PowerShell
+    steps:
+      - name: directory powerShell
+        run: Get-Locations
+      - name: Directory Bash
+        run: pwd
+        shell: bash
